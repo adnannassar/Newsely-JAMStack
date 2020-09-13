@@ -29,10 +29,10 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <ul class="navbar-top-left-menu">
                     <li class="nav-item">
-                      <a href="./index-inner.html" class="nav-link">Advertise</a>
+                      <a href="index-inner.njk" class="nav-link">Advertise</a>
                     </li>
                     <li class="nav-item">
-                      <a href="./aboutus.html" class="nav-link">About</a>
+                      <a href="aboutus.njk" class="nav-link">About</a>
                     </li>
                     <li class="nav-item">
                       <a href="#" class="nav-link">Events</a>
@@ -88,28 +88,28 @@
                           </button>
                         </li>
                         <li class="nav-item active">
-                          <a class="nav-link" href="../index.html">Home</a>
+                          <a class="nav-link" href="../index.njk">Home</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="magazine.njk">MAGAZINE</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./business.html">Business</a>
+                          <a class="nav-link" href="business.njk">Business</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./sports.html">Sports</a>
+                          <a class="nav-link" href="sports.njk">Sports</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./art.html">Art</a>
+                          <a class="nav-link" href="art.njk">Art</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./politics.html">POLITICS</a>
+                          <a class="nav-link" href="politics.njk">POLITICS</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./travel.html">Travel</a>
+                          <a class="nav-link" href="travel.njk">Travel</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="./contactus.html">Contact</a>
+                          <a class="nav-link" href="contactus.njk">Contact</a>
                         </li>
                       </ul>
                     </div>
@@ -162,43 +162,62 @@
               <div class="card" data-aos="fade-up">
                 <div class="card-body">
                   <div class="aboutus-wrapper">
-                    <h1 class="mt-5">
-                      About Us
+                    <h1 class="mt-5 text-center mb-5">
+                      Contact Us
                     </h1>
-                    <p class="font-weight-600 fs-15">
-                      He has led a remarkable campaign, defying the traditional
-                      mainstream parties courtesy of his En Marche! movement.
-                      For many, however, the campaign has become less about
-                      backing Macron and instead about voting against Le Pen,
-                      the National Front candidate.
-                    </p>
-                    <p class="font-weight-600 fs-15 mb-5 mt-4">
-                      He has led a remarkable campaign, defying the traditional
-                      mainstream parties courtesy of his En Marche! movement.
-                      For many, however, the campaign has become less about
-                      backing Macron and instead about voting against Le Pen,
-                      the National Front candidate.
-                    </p>
-                    <img
-                      src="../assets/images/about/about.jpg"
-                      alt="banner"
-                      class="img-fluid mb-5"
-                    />
+                    <div class="row">
+                      <div class="col-lg-12 mb-5 mb-sm-2">
+                        <form>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="form-group">
+                                <textarea
+                                  class="form-control textarea"
+                                  placeholder="Comment *"
+                                  id="message"
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="name"
+                                  aria-describedby="name"
+                                  placeholder="Name *"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="email"
+                                  aria-describedby="email"
+                                  placeholder="Email *"
+                                />
+                              </div>
+                            </div>
+                          </div>
 
-                    <p class="font-weight-600 fs-15 text-center">
-                      He has led a remarkable campaign, defying the traditional
-                      mainstream parties courtesy of his En Marche! movement.
-                      For many, however, the campaign has become less about
-                      backing Macron and instead about voting against Le Pen,
-                      the National Front candidate.
-                    </p>
-                    <p class="font-weight-600 fs-15 mb-5 mt-4 text-center">
-                      He has led a remarkable campaign, defying the traditional
-                      mainstream parties courtesy of his En Marche! movement.
-                      For many, however, the campaign has become less about
-                      backing Macron and instead about voting against Le Pen,
-                      the National Front candidate.
-                    </p>
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <div class="form-group">
+                                <a
+                                  href="#"
+                                  class="btn btn-lg btn-dark font-weight-bold mt-3"
+                                  >Send Message</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -368,7 +387,6 @@
     <!-- End plugin js for this page -->
     <!-- Custom js for this page-->
     <script src="../assets/js/demo.js"></script>
-    <script src="../assets/js/jquery.easeScroll.js"></script>
     <script src="../assets/js/jquery.easeScroll.js"></script>
     <!-- End custom js for this page-->
   </body>

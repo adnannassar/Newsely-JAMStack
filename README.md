@@ -1,1 +1,2 @@
 # Newsely-JAMStack
+API KEY : 8e39a654c4f04f038d5053f4b06214a6
