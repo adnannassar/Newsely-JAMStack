@@ -92,7 +92,7 @@ body {
   color: #3a3a3a;
   text-align: left;
   background-image: url("../images/mine/Newsely-images/archive-gliwice.jpg");
-  background-size: cover;
+  background-size: auto;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -11798,7 +11798,7 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .flash-news-banner {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px 0px;
 
 }
@@ -11821,8 +11821,8 @@ header .navbar-bottom .navbar-toggler {
 
 
 .content-overflow {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 60px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 0;
 
 
 }
