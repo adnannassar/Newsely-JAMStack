@@ -604,6 +604,7 @@ pre code {
   .container {
     max-width: 540px;
   }
+
 }
 
 @media (min-width: 768px) {
@@ -2117,6 +2118,12 @@ pre code {
   .table-responsive-sm>.table-bordered {
     border: 0;
   }
+  .flash-news-banner .container{
+    border-radius: 0px !important;
+  }
+    body{
+      background-size: auto;
+    }
 }
 
 @media (max-width: 767.98px) {
