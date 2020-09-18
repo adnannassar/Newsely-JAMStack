@@ -5209,6 +5209,7 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
+
 .breadcrumb-item+.breadcrumb-item {
   padding-left: 0.5rem;
 }
@@ -11547,7 +11548,7 @@ header .navbar-top .navbar-top-right-menu .nav-item:last-child .nav-link {
 }
 
 header .navbar-bottom {
-  padding-bottom: 24px;
+
 }
 
 @media (max-width: 999px) {
