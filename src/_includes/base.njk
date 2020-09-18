@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -144,8 +145,9 @@
                         </p>
                     </div>
                     <div class="d-flex">
-                        <span class="mr-3 text-primary">Wed, March 4, 2020</span>
-                        <span class="text-primary">30°C,London</span>
+                        <span class="mr-3 text-primary">{{ dates}}</span>
+
+                        <span class="text-primary">{{ weather.main.temp }}°C, {{ weather.name }}</span>
                     </div>
                 </div>
             </div>
