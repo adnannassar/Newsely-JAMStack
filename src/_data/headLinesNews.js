@@ -9,16 +9,19 @@ const languagesArray =
         , 'se', 'sg', 'si', 'sk', 'th', 'tr', 'tw', 'ua', 'us', 've', 'za'];
 
 
+const topInternationalHeadLines = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=1`;
+
 async function getNews ()  {
    const item = languagesArray[Math.floor(Math.random() * languagesArray.length)];
-    const newsURL = `https://newsapi.org/v2/top-headlines?country=gb&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=1`;
+
     try {
-        const response = await axios.get(newsURL);
+        const response = await axios.get(topInternationalHeadLines);
         return response.data;
     } catch (error) {
 
         console.log(error);
     }
 };
+
 
 module.exports = getNews();

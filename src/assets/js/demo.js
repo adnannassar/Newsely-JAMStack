@@ -7,7 +7,7 @@ $(function () {
 
   // scroll header script here
   window.onscroll = function () {
-    scrollHeader();
+   // scrollHeader();
   };
   // Get the header
   var header = $(".navbar-bottom");
@@ -65,3 +65,4 @@ $(function () {
     fixedBackground: true
   });
 });
+

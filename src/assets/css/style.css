@@ -6336,6 +6336,7 @@ a.close.disabled {
     margin: 30px auto;
   }
 
+
   .modal-dialog-scrollable {
     max-height: calc(100% - 60px);
   }
@@ -11974,7 +11975,9 @@ header .navbar-bottom .navbar-toggler {
 .aboutus-wrapper {
   padding: 0 160px;
 }
-
+#header{
+  opacity: 0.9;
+}
 @media (max-width: 999px) {
   .aboutus-wrapper {
     padding: 0;
@@ -11986,15 +11989,11 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .rotate-img img {
-  -webkit-transform: rotate(0) scale(1);
-  transform: rotate(0) scale(1);
-  -webkit-transition: 0.6s ease-in-out;
-  transition: 0.6s ease-in-out;
+  transition: transform .5s ease;
 }
 
 .rotate-img:hover img {
-  -webkit-transform: rotate(15deg) scale(1.4);
-  transform: rotate(15deg) scale(1.4);
+  transform: scale(1.5);
 }
 
 footer {
