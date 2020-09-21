@@ -9,10 +9,10 @@ const languagesArray =
         , 'se', 'sg', 'si', 'sk', 'th', 'tr', 'tw', 'ua', 'us', 've', 'za'];
 
 
-// general  science sports technology
 
 
-const topHeadLinesInGermany = `https://newsapi.org/v2/top-headlines?country=ae&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=3`;
+
+const topHeadLinesInGermany = `https://newsapi.org/v2/top-headlines?country=de&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=6`;
 
 async function getNews ()  {
    const item = languagesArray[Math.floor(Math.random() * languagesArray.length)];

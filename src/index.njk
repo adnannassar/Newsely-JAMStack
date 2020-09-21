@@ -8,22 +8,22 @@ layout: base.njk
     <div class="row" data-aos="fade-up">
         <div class="col-xl-6 stretch-card grid-margin">
             <div class="position-relative">
-                <img src= {{ headLinesNews.articles[0].urlToImage }} alt="banner"
-                     class="img-fluid bg-dark rounded-top " style="width: 100% ; min-height: 50%"/>
+                <a href={{ headLinesNews.articles[0].url }}>
+                    <img src= {{ headLinesNews.articles[0].urlToImage }} alt="banner"
+                         class="img-fluid bg-dark rounded-top " style="width: 100% ; min-height: 50%"/></a>
+
                 <div class="banner-content bg-white py-3 rounded-bottom position-relative" style="min-height: 50%">
                     <div class="badge badge-danger fs-12 font-weight-bold mb-3">
                         global news
                     </div>
-                    <h1 class="text-dark">
-                        {{ headLinesNews.articles[0].title }}
-                    </h1>
-                    <h3 class="text-dark">
-                        {{ headLinesNews.articles[0].description }}
-
-                    </h3>
-                    <div class="fs-12">
-                        <span class="mr-2">Photo </span>10 Minutes ago
-                    </div>
+                    <a style="text-decoration: none" href={{ headLinesNews.articles[0].url }}>
+                        <h1 class="text-dark">
+                            {{ headLinesNews.articles[0].title }}
+                        </h1>
+                        <h3 class="text-dark">
+                            {{ headLinesNews.articles[0].description }}
+                        </h3>
+                    </a>
                 </div>
 
             </div>
@@ -33,33 +33,39 @@ layout: base.njk
                 <div class="card-body ">
                     <h1 class="display-3">Neuesten Nachrichten</h1>
 
-                    <div class="d-flex border-bottom-blue py-4 align-items-center justify-content-between">
-                        <div class="pr-3" style="min-width: 50%">
-                            <h4>{{ newestNewsGermany.articles[0].title }}</h4>
+                    <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[3].url }}>
+                        <div class="d-flex border-bottom-blue py-4 align-items-center justify-content-between">
+                            <div class="pr-3" style="min-width: 50%">
+                                <h4>{{ newestNewsGermany.articles[3].title }}</h4>
+                            </div>
+                            <div class="rotate-img rounded">
+                                <img src={{ newestNewsGermany.articles[3].urlToImage }} alt="thumb"
+                                     class="img-fluid   "/>
+                            </div>
                         </div>
-                        <div class="rotate-img rounded">
-                            <img src={{ newestNewsGermany.articles[0].urlToImage }} alt="thumb"
-                                 class="img-fluid   "/>
+                    </a>
+                    <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[4].url }}>
+                        <div class="d-flex border-bottom-blue py-4  align-items-center justify-content-between">
+                            <div class="pr-3" style="min-width: 50%">
+                                <h4>{{ newestNewsGermany.articles[4].title }}</h4>
+                            </div>
+                            <div class="rotate-img rounded">
+                                <img src={{ newestNewsGermany.articles[4].urlToImage }} alt="thumb"
+                                     class="img-fluid  "/>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex border-bottom-blue py-4  align-items-center justify-content-between">
-                        <div class="pr-3" style="min-width: 50%">
-                            <h4>{{ newestNewsGermany.articles[1].title }}</h4>
+                    </a>
+                    <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[5].url }}>
+                        <div class="d-flex py-4 align-items-center justify-content-between">
+                            <div class="pr-3" style="min-width: 50%">
+                                <h4>{{ newestNewsGermany.articles[5].title }}</h4>
+                            </div>
+                            <div class="rotate-img rounded">
+                                <img src={{ newestNewsGermany.articles[5].urlToImage }} alt="thumb"
+                                     class="img-fluid"/>
+                            </div>
                         </div>
-                        <div class="rotate-img rounded">
-                            <img src={{ newestNewsGermany.articles[1].urlToImage }} alt="thumb"
-                                 class="img-fluid  "/>
-                        </div>
-                    </div>
-                    <div class="d-flex py-4 align-items-center justify-content-between">
-                        <div class="pr-3" style="min-width: 50%">
-                            <h4>{{ newestNewsGermany.articles[2].title }}</h4>
-                        </div>
-                        <div class="rotate-img rounded">
-                            <img src={{ newestNewsGermany.articles[2].urlToImage }} alt="thumb"
-                                 class="img-fluid"/>
-                        </div>
-                    </div>
+                    </a>
 
                 </div>
             </div>
@@ -69,114 +75,111 @@ layout: base.njk
         <div class="col-lg-3 stretch-card grid-margin">
             <div class="card">
                 <div class="card-body">
-                    <h2>Category</h2>
-                    <ul class="vertical-menu">
+                    <h2 class="display-2 pb-3">Kategorien</h2>
+                    <ul class="vertical-menu" id="category-ul">
                         <li>
-                            <a href="#">Politics</a>
+                            <h3 class="display-4 py-3" id="Unternehmen">Unternehmen</h3>
                         </li>
                         <li>
-                            <a href="#">International</a>
+                            <h3 class="display-4 py-3" id="Unterhaltung">Unterhaltung</h3>
                         </li>
                         <li>
-                            <a href="#">Finance</a>
+                            <h3 class="display-4 py-3" id="Gesundheit">Gesundheit</h3>
                         </li>
                         <li>
-                            <a href="">Health care</a>
+                            <h3 class="display-4 py-3" id="Allgemeines">Allgemeines</h3>
                         </li>
                         <li>
-                            <a href="#">Technology</a>
+                            <h3 class="display-4 py-3" id="Wissenschaft">Wissenschaft</h3>
                         </li>
                         <li>
-                            <a href="#">Jobs</a>
+                            <h3 class="display-4 py-3" id="Sport">Sport</h3>
                         </li>
                         <li>
-                            <a href="#">Media</a>
+                            <h3 class="display-4 py-3" id="Technologie">Technologie</h3>
                         </li>
-                        <li>
-                            <a href="#">Administration</a>
-                        </li>
-                        <li>
-                            <a href="#">Sports</a>
-                        </li>
-                        <li>
-                            <a href="#">Game</a>
-                        </li>
-                        <li>
-                            <a href="#">Art</a>
-                        </li>
-                        <li>
-                            <a href="#">Kids</a>
-                        </li>
+
                     </ul>
                 </div>
             </div>
         </div>
         <div class="col-lg-9 stretch-card grid-margin">
+            <span></span>
             <div class="card">
                 <div class="card-body">
-                    <div class="row border-bottom-blue">
-                        <div class="col-sm-4 grid-margin">
-                            <div class="position-relative  ">
-                                <div class="rotate-img  rounded" style="max-height: 130px">
-                                    <img src={{ categoryNews.articles[0].urlToImage }} alt="thumb"
-                                         class="img-fluid "/>
-                                </div>
-                                <div class="badge-positioned">
-                                    <span class="badge badge-danger font-weight-bold">Flash news</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-8  grid-margin">
-                            <h4 class="mb-2 font-weight-600">
-                                {{ categoryNews.articles[0].title }}
-                            </h4>
-                            <p class="mb-0">
-                                {{ categoryNews.articles[0].description }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row pt-4  border-bottom-blue">
-                        <div class="col-sm-4 grid-margin">
-                            <div class="position-relative  ">
-                                <div class="rotate-img  rounded" style="max-height: 130px">
-                                    <img src={{ categoryNews.articles[1].urlToImage }} alt="thumb"
-                                         class="img-fluid "/>
-                                </div>
-                                <div class="badge-positioned">
-                                    <span class="badge badge-danger font-weight-bold">Flash news</span>
+                    <a id="a0" style="text-decoration: none; color: black" target="_blank">
+                        <div class="row border-bottom-blue">
+                            <div class="col-sm-4 grid-margin">
+                                <div class="position-relative  ">
+                                    <div class="rotate-img  rounded" style="max-height: 130px">
+                                        <img alt="thumb" src="assets/images/mine/Newsely-images/archive-gliwice.jpg"
+                                             id="categoryImage0"
+                                             class="img-fluid "/>
+                                    </div>
+                                    <div class="badge-positioned">
+                                        <span class="badge badge-danger font-weight-bold">Flash news</span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-8  grid-margin">
-                            <h4 class="mb-2 font-weight-600">
-                                {{ categoryNews.articles[1].title }}
-                            </h4>
-                            <p class="mb-0">
-                                {{ categoryNews.articles[1].description }}
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row pt-4 ">
-                        <div class="col-sm-4 grid-margin">
-                            <div class="position-relative  ">
-                                <div class="rotate-img  rounded" style="max-height: 130px">
-                                    <img src={{ categoryNews.articles[2].urlToImage }} alt="thumb"
-                                         class="img-fluid "/>
-                                </div>
-                                <div class="badge-positioned">
-                                    <span class="badge badge-danger font-weight-bold">Flash news</span>
-                                </div>
+                            <div class="col-sm-8  grid-margin">
+                                <h4 class="mb-2 font-weight-600" id="categoryTitle0">
+
+                                </h4>
+                                <p class="mb-0" id="categoryDescription0">
+
+                                </p>
                             </div>
                         </div>
-                        <div class="col-sm-8  grid-margin">
-                            <h4 class="mb-2 font-weight-600">
-                                {{ categoryNews.articles[2].title }}
-                            </h4>
-                            <p class="mb-0">
-                                {{ categoryNews.articles[2].description }}
-                            </p>
+                    </a>
+                    <a id="a1" style="text-decoration: none; color: black" target="_blank">
+                        <div class="row pt-4 border-bottom-blue">
+                            <div class="col-sm-4 grid-margin">
+                                <div class="position-relative  ">
+                                    <div class="rotate-img  rounded" style="max-height: 130px">
+                                        <img alt="thumb" src="assets/images/mine/Newsely-images/archive-gliwice.jpg"
+                                             id="categoryImage1"
+                                             class="img-fluid "/>
+                                    </div>
+                                    <div class="badge-positioned">
+                                        <span class="badge badge-danger font-weight-bold">Flash news</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8  grid-margin">
+                                <h4 class="mb-2 font-weight-600" id="categoryTitle1">
+
+                                </h4>
+                                <p class="mb-0" id="categoryDescription1">
+
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+                    <a id="a2" style="text-decoration: none; color: black" target="_blank">
+                        <div class="row pt-4">
+                            <div class="col-sm-4 grid-margin">
+                                <div class="position-relative  ">
+                                    <div class="rotate-img  rounded" style="max-height: 130px">
+                                        <img alt="thumb" src="assets/images/mine/Newsely-images/archive-gliwice.jpg"
+                                             id="categoryImage2"
+                                             class="img-fluid "/>
+                                    </div>
+                                    <div class="badge-positioned">
+                                        <span class="badge badge-danger font-weight-bold">Flash news</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8  grid-margin">
+                                <h4 class="mb-2 font-weight-600" id="categoryTitle2">
+
+                                </h4>
+                                <p class="mb-0" id="categoryDescription2">
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>

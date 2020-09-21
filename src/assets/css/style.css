@@ -11976,7 +11976,7 @@ header .navbar-bottom .navbar-toggler {
   padding: 0 160px;
 }
 #header{
-  opacity: 0.9;
+  opacity: 1;
 }
 @media (max-width: 999px) {
   .aboutus-wrapper {
@@ -12043,6 +12043,15 @@ footer .footer-top .social-media li a:hover {
 
 footer .footer-top .social-media li a:hover i {
   color: #ffffff;
+}
+
+.vertical-menu li h3{
+  color: gray;
+  cursor: pointer;
+}
+.vertical-menu li h3:hover{
+  color: black;
+  font-weight: bold;
 }
 
 footer .footer-top .footer-border-bottom {
