@@ -92,7 +92,7 @@ body {
   color: #3a3a3a;
   text-align: left;
   background-image: url("../images/mine/Newsely-images/archive-gliwice.jpg");
-  background-size: auto;
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -604,6 +604,9 @@ pre code {
   .container {
     max-width: 540px;
   }
+
+
+
 
 }
 
@@ -4617,6 +4620,7 @@ input[type="button"].btn-block {
   background-size: 100% 100%;
 }
 
+
 @media (max-width: 575.98px) {
 
   .navbar-expand-sm>.container,
@@ -4628,6 +4632,7 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+
 }
 
 @media (min-width: 576px) {
@@ -4730,7 +4735,12 @@ input[type="button"].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  .font-weight-600{
+    font-size: 0.85rem;
+  }
 }
+
+
 
 @media (min-width: 992px) {
   .navbar-expand-lg {
@@ -10973,6 +10983,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
 h1,
 h2,
 h3,
@@ -11800,7 +11811,7 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .flash-news-banner {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   padding: 20px 0px;
 
 }
@@ -11823,7 +11834,7 @@ header .navbar-bottom .navbar-toggler {
 
 
 .content-overflow {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 50px 0;
 
 
@@ -11924,7 +11935,7 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .div-w-80 {
-  width: 80px;
+  width: 40%;
 }
 
 .post-comment-section {
@@ -11976,7 +11987,7 @@ header .navbar-bottom .navbar-toggler {
   padding: 0 160px;
 }
 #header{
-  opacity: 1;
+  opacity: 0.9;
 }
 @media (max-width: 999px) {
   .aboutus-wrapper {

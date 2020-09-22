@@ -12,15 +12,13 @@ const languagesArray =
 
 
 // general  science sports technology
-const businessInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=8e39a654c4f04f038d5053f4b06214a6`;
 const entertainmentInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=entertainment&apiKey=8e39a654c4f04f038d5053f4b06214a6`;
-const healthInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=health&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=3`;
 
 async function getNews ()  {
    const item = languagesArray[Math.floor(Math.random() * languagesArray.length)];
 
     try {
-        const response = await axios.get(healthInGermany);
+        const response = await axios.get(entertainmentInGermany);
         return response.data;
     } catch (error) {
 
