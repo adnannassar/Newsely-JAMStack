@@ -65,18 +65,38 @@ $(function () {
         fixedBackground: true
     });
 
-    $(function (){
+    $(function () {
+
+
+        blankImagesArray = [
+            "assets/images/mine/Newsely-images/administration.jpg",
+            "assets/images/mine/Newsely-images/archive-gliwice.jpg",
+            "assets/images/mine/Newsely-images/black-and-white.jpg",
+            "assets/images/mine/Newsely-images/img1.jpg",
+            "assets/images/mine/Newsely-images/img2.jpg",
+            "assets/images/mine/Newsely-images/img3.jpg",
+            "assets/images/mine/Newsely-images/img4.jpg",
+            "assets/images/mine/Newsely-images/img5.png",
+            "assets/images/mine/Newsely-images/img6.jpg",
+
+        ];
         var img = $("img");
-        for(let i = 0 ; i<img.length; i++ ){
-            if ($(img[i]).attr('src').toString().length === 0  ){
-                $(img[i]).attr('src', "assets/images/mine/Newsely-images/administration.jpg");
+
+        for (let i = 0, j = 0; i < img.length; i++ , j++) {
+            if ($(img[i]).attr('src').toString().length === 0 ||
+                ($(img[i]).attr('src').toString() === 'alt="thumb"')
+            ) {
+                $(img[i]).attr('src', blankImagesArray[Math.floor(Math.random() * blankImagesArray.length)]);
             }
             $(img[i]).attr('width', "100%");
         }
 
     });
-
+    $('.simple-marquee-container').SimpleMarquee();
+    $(".marquee-1").trigger('mouseenter');
+    $(".marquee-1").trigger('mouseleave');
 });
+
 
 
 

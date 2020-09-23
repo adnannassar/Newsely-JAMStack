@@ -4737,6 +4737,7 @@ input[type="button"].btn-block {
   }
   .font-weight-600{
     font-size: 0.85rem;
+
   }
 }
 
@@ -11790,6 +11791,8 @@ header .navbar-bottom .navbar-toggler {
 
 .font-weight-600 {
   font-weight: 600;
+  flex-basis: 70%;
+  text-align: start;
 }
 
 .image-hover {
@@ -11935,7 +11938,8 @@ header .navbar-bottom .navbar-toggler {
 }
 
 .div-w-80 {
-  width: 40%;
+  //width: 40%;
+  flex-basis: 30%;
 }
 
 .post-comment-section {
@@ -11987,7 +11991,7 @@ header .navbar-bottom .navbar-toggler {
   padding: 0 160px;
 }
 #header{
-  opacity: 0.9;
+  opacity: 1;
 }
 @media (max-width: 999px) {
   .aboutus-wrapper {
