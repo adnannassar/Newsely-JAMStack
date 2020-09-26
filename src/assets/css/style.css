@@ -11936,6 +11936,16 @@ header .navbar-bottom .navbar-toggler {
 .w-90 {
   width: 90%;
 }
+.w-100 {
+  width: 100%;
+
+}
+.badge-positioned-edited {
+  position: absolute;
+  left: 0.5rem;
+  bottom: 0.5rem;
+
+}
 
 .div-w-80 {
   //width: 40%;
