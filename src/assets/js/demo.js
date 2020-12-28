@@ -67,7 +67,6 @@ $(function () {
 
     $(function () {
 
-
         blankImagesArray = [
             "assets/images/mine/Newsely-images/administration.jpg",
             "assets/images/mine/Newsely-images/archive-gliwice.jpg",
@@ -80,12 +79,11 @@ $(function () {
             "assets/images/mine/Newsely-images/img6.jpg",
 
         ];
-        var img = $("img");
+        const img = $("img");
 
-        for (let i = 0, j = 0; i < img.length; i++ , j++) {
-            if ($(img[i]).attr('src').toString().length === 0 ||
-                ($(img[i]).attr('src').toString() === 'alt="thumb"')
-            ) {
+        for (let i = 0 ;  i < img.length; i++) {
+            if ( $(img[i]).attr('src').toString().length === 0 ||
+                ($(img[i]).attr('src').toString() === 'alt="thumb"')){
                 $(img[i]).attr('src', blankImagesArray[Math.floor(Math.random() * blankImagesArray.length)]);
             }
             $(img[i]).attr('width', "100%");

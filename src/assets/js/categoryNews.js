@@ -34,24 +34,22 @@ $(function () {
     $("#Technologie").on('click', () => {
 
         getNewsByCategory(technologyInGermany);
-
     });
 
 
     function getNewsByCategory(categoryName) {
+
         $.getJSON(categoryName, function (data) {
 
             let i;
             for (i = 0; i < 3; i++) {
-                var categoryTitle = $(`#categoryTitle${i}`);
-                var categoryDescription = $(`#categoryDescription${i}`);
-                var categoryImage = $(`#categoryImage${i}`);
-                var hyberLink = $(`#a${i}`);
-
-
+                const categoryTitle = $(`#categoryTitle${i}`);
+                const categoryDescription = $(`#categoryDescription${i}`);
+                const categoryImage = $(`#categoryImage${i}`);
+                const hyperLink = $(`#a${i}`);
                 $(categoryTitle).html(data.articles[i].title);
                 $(categoryDescription).html(data.articles[i].description);
-                $(hyberLink).attr('href', data.articles[i].url);
+                $(hyperLink).attr('href', data.articles[i].url);
 
                 if (data.articles[i].urlToImage == null) {
                     $(categoryImage).attr('src', "assets/images/mine/Newsely-images/archive-gliwice.jpg");

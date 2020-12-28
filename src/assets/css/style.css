@@ -4890,7 +4890,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -11560,9 +11560,7 @@ header .navbar-top .navbar-top-right-menu .nav-item:last-child .nav-link {
   }
 }
 
-header .navbar-bottom {
 
-}
 
 @media (max-width: 999px) {
   header .navbar-bottom {
@@ -12001,7 +11999,7 @@ header .navbar-bottom .navbar-toggler {
   padding: 0 160px;
 }
 #header{
-  opacity: 1;
+  opacity: 0.85;
 }
 @media (max-width: 999px) {
   .aboutus-wrapper {

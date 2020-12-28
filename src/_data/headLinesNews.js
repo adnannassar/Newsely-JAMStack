@@ -1,6 +1,6 @@
 const axios = require("axios");
-
-const topInternationalHeadLines = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=1`;
+require('dotenv').config();
+const topInternationalHeadLines = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${process.env.API_KEY_2_NEWS}&pageSize=1`;
 
 async function getNews ()  {
     try {

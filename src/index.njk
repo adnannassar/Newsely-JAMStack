@@ -5,11 +5,13 @@ layout: base.njk
 
 
 <div class="container">
+
     <div class="row" data-aos="fade-up">
         <div class="col-xl-6 stretch-card grid-margin">
             <div class="position-relative">
-                <a href={{ headLinesNews.articles[0].url }}>
-                    <img src= {{ headLinesNews.articles[0].urlToImage }} alt="banner"
+
+                <a href={{ headLinesNews.articles[0].url }} >
+                    <img src= {{ headLinesNews.articles[0].urlToImage }} alt="thumb"
                          class="img-fluid bg-dark rounded-top " style="width: 100% ; min-height: 50%"/></a>
 
                 <div class="banner-content bg-white py-3 rounded-bottom position-relative" style="min-height: 50%">
@@ -218,7 +220,7 @@ layout: base.njk
                                 </h5>
                             </div></a>
                             <a target="_blank" style="text-decoration: none; color: black" href="{{technologyNews.articles[3].url}}">
-                            <div class="d-flex justify-content-between align-items-center pt-4">
+                            <div class="d-flex justify-content-between align-items-center border-bottom pt-4 pb-4" >
                                 <div class="div-w-80 mr-3">
                                     <div class="rotate-img  rounded">
                                         <img src={{ technologyNews.articles[3].urlToImage }} alt="thumb"
@@ -446,6 +448,7 @@ layout: base.njk
             </div>
         </div>
     </div>
+    <!--
     <div class="row py-4" data-aos="fade-up">
         <div class="col-lg-3 stretch-card grid-margin">
             <div class="card">
@@ -485,9 +488,9 @@ layout: base.njk
                     <a id="a0" style="text-decoration: none; color: black" target="_blank">
                         <div class="row border-bottom-blue">
                             <div class="col-sm-4 grid-margin">
-                                <div class="position-relative  ">
+                                <div class="position-relative">
                                     <div class="rotate-img  rounded" style="max-height: 130px">
-                                        <img alt="thumb" src="assets/images/mine/Newsely-images/archive-gliwice.jpg"
+                                        <img alt="thumb" src="../assets/images/mine/Newsely-images/archive-gliwice.jpg"
                                              id="categoryImage0"
                                              class="img-fluid "/>
                                     </div>
@@ -511,7 +514,7 @@ layout: base.njk
                             <div class="col-sm-4 grid-margin">
                                 <div class="position-relative  ">
                                     <div class="rotate-img  rounded" style="max-height: 130px">
-                                        <img alt="thumb" src="assets/images/mine/Newsely-images/archive-gliwice.jpg"
+                                        <img alt="thumb" src="../assets/images/mine/Newsely-images/archive-gliwice.jpg"
                                              id="categoryImage1"
                                              class="img-fluid "/>
                                     </div>
@@ -535,7 +538,7 @@ layout: base.njk
                             <div class="col-sm-4 grid-margin">
                                 <div class="position-relative  ">
                                     <div class="rotate-img  rounded" style="max-height: 130px">
-                                        <img alt="thumb" src="assets/images/mine/Newsely-images/archive-gliwice.jpg"
+                                        <img alt="thumb" src="../assets/images/mine/Newsely-images/archive-gliwice.jpg"
                                              id="categoryImage2"
                                              class="img-fluid "/>
                                     </div>
@@ -559,5 +562,5 @@ layout: base.njk
             </div>
         </div>
     </div>
-
+    -->
 </div>

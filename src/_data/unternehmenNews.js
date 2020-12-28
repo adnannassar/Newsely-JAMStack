@@ -1,6 +1,6 @@
 const axios = require("axios");
-
-const businessInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=8e39a654c4f04f038d5053f4b06214a6&pageSize=6`;
+require('dotenv').config();
+const businessInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=${process.env.API_KEY_2_NEWS}&pageSize=4`;
 
 async function getNews ()  {
     try {
