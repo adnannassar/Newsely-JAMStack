@@ -12169,5 +12169,8 @@ footer .footer-bottom {
   outline: 0;
 }
 
+.footer-hyperLink:hover{
+  color : #0b64d2;
+}
 
 /*# sourceMappingURL=maps/style.css.map */

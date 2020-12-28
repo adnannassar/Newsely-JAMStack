@@ -1,10 +1,10 @@
 const axios = require("axios");
 require('dotenv').config();
-const businessInGermany = `https://newsapi.org/v2/top-headlines?country=de&category=business&apiKey=${process.env.API_KEY_3_NEWS}&pageSize=6`;
+const topInternationalHeadLines = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${process.env.API_KEY_3_NEWS}&pageSize=1`;
 
 async function getNews ()  {
     try {
-        const response = await axios.get(businessInGermany);
+        const response = await axios.get(topInternationalHeadLines);
         return response.data;
     } catch (error) {
         console.log(error);
