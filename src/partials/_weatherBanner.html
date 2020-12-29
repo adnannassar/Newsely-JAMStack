@@ -13,7 +13,7 @@
 </div>
 <script>
     let lat , lon;
-    window.onload =  function getLocation() {
+    function getLocation() {
         if (navigator.geolocation) {
             return navigator.geolocation.getCurrentPosition(showPosition, showError);
 
@@ -55,7 +55,7 @@
         }
     }
 
-
+getLocation();
 </script>
 
 
