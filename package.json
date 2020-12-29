@@ -23,10 +23,12 @@
     "bootstrap": "^4.3.1",
     "dotenv": "^8.2.0",
     "jquery": "^3.4.1",
+    "jzz": "^1.1.7",
     "nunjucks-date": "^1.5.0",
     "popper.js": "^1.15.0",
     "requirejs": "^2.3.6",
-    "unirest": "^0.6.0"
+    "unirest": "^0.6.0",
+    "web-midi-api": "^2.0.8"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
@@ -41,6 +43,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "merge-stream": "^2.0.0",
+    "node-geocoder": "^3.27.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
