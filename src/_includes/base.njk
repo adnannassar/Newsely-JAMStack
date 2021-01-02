@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css"/>
     <link rel="stylesheet" href="assets/vendors/aos/dist/aos.css/aos.css"/>
 
-    <!-- End plugin css for this page -->
-    <link rel="shortcut icon" href="assets/images/favicon.png"/>
-
     <!-- inject:css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/marquee.css"/>
@@ -44,8 +41,15 @@
 
     </div>
 </div>
+<script>
+    function changeTheme() {
+        const elements = document.getElementsByClassName("mainContainer");
+        for( let i = 0 ; i<elements.length; i++){
+            elements[i].classList.toggle("dark-card");
+        }
 
-
+    }
+</script>
 <!-- plugin js for this page -->
 <script src="assets/vendors/js/vendor.bundle.base.js"></script>
 <script src="assets/vendors/aos/dist/aos.js/aos.js"></script>
