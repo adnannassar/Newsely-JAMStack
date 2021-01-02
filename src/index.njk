@@ -4,29 +4,27 @@ layout: base.njk
 ---
 
 
-<div class="container" >
+<div class="container">
 
-    <div class="row" data-aos="fade-up" >
-        <div class="col-xl-6 stretch-card grid-margin" >
+    <div class="row" data-aos="fade-up">
+        <div class="col-xl-6 stretch-card grid-margin">
             <div class="position-relative">
 
                 <a href={{ headLinesNewsInternational.articles[0].url }}>
                     <img src= {{ headLinesNewsInternational.articles[0].urlToImage }} alt="thumb"
                          class="img-fluid bg-dark rounded-top " style="width: 100% ; min-height: 50%"/></a>
 
-                <div class="banner-content bg-white py-3 rounded-bottom position-relative mainContainer" style="min-height: 50%">
+                <div class="banner-content bg-white py-3 rounded-bottom position-relative mainContainer"
+                     style="min-height: 50%">
                     <div class="badge badge-danger fs-12s font-weight-bold mb-3 p-2">
                         Globale Nachrichten
                     </div>
-                    <a style="text-decoration: none; color: black ;"
-                       href={{ headLinesNewsInternational.articles[0].url }}>
-                        <h1 class="text-dark">
-                            {{ headLinesNewsInternational.articles[0].title }}
-                        </h1>
-                        <h3 class="text-dark">
-                            {{ headLinesNewsInternational.articles[0].description }}
-                        </h3>
-                    </a>
+                    <h1>
+                        {{ headLinesNewsInternational.articles[0].title }}
+                    </h1>
+                    <h3>
+                        {{ headLinesNewsInternational.articles[0].description }}
+                    </h3>
                 </div>
 
             </div>
@@ -36,39 +34,45 @@ layout: base.njk
                 <div class="card-body ">
                     <h1 class="display-3">Neuesten Nachrichten</h1>
 
-                    <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[0].url }}>
-                        <div class="d-flex border-bottom-blue py-4 align-items-center justify-content-between">
-                            <div class="pr-3" style="min-width: 50%">
-                                <h4>{{ newestNewsGermany.articles[0].title }}</h4>
-                            </div>
+
+                    <div class="d-flex border-bottom-blue py-4 align-items-center justify-content-between">
+                        <div class="pr-3" style="min-width: 50%">
+                            <h4>{{ newestNewsGermany.articles[0].title }}</h4>
+                        </div>
+                        <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[0].url }}>
                             <div class="rotate-img rounded">
                                 <img src={{ newestNewsGermany.articles[0].urlToImage }} alt="thumb"
                                      class="img-fluid   "/>
                             </div>
+                        </a>
+                    </div>
+
+
+                    <div class="d-flex border-bottom-blue py-4  align-items-center justify-content-between">
+                        <div class="pr-3" style="min-width: 50%">
+                            <h4>{{ newestNewsGermany.articles[1].title }}</h4>
                         </div>
-                    </a>
-                    <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[1].url }}>
-                        <div class="d-flex border-bottom-blue py-4  align-items-center justify-content-between">
-                            <div class="pr-3" style="min-width: 50%">
-                                <h4>{{ newestNewsGermany.articles[1].title }}</h4>
-                            </div>
+                        <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[1].url }}>
                             <div class="rotate-img rounded">
                                 <img src={{ newestNewsGermany.articles[1].urlToImage }} alt="thumb"
                                      class="img-fluid  "/>
                             </div>
+                        </a>
+                    </div>
+
+
+                    <div class="d-flex py-4 align-items-center justify-content-between">
+                        <div class="pr-3" style="min-width: 50%">
+                            <h4>{{ newestNewsGermany.articles[2].title }}</h4>
                         </div>
-                    </a>
-                    <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[2].url }}>
-                        <div class="d-flex py-4 align-items-center justify-content-between">
-                            <div class="pr-3" style="min-width: 50%">
-                                <h4>{{ newestNewsGermany.articles[2].title }}</h4>
-                            </div>
+                        <a style="text-decoration: none ; color: black" href={{ newestNewsGermany.articles[2].url }}>
                             <div class="rotate-img rounded">
                                 <img src={{ newestNewsGermany.articles[2].urlToImage }} alt="thumb"
                                      class="img-fluid"/>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+
 
                 </div>
             </div>
@@ -86,9 +90,10 @@ layout: base.njk
                             <div class="row">
                                 <div class="col-sm-6 grid-margin ">
                                     <div class="position-relative ">
-                                        <a style="text-decoration: none ; color: black"
-                                           href={{ unternehmenNews.articles[0].url }}>
-                                            <div class="d-flex flex-column align-items-center justify-content-between">
+
+                                        <div class="d-flex flex-column align-items-center justify-content-between">
+                                            <a style="text-decoration: none ; color: black"
+                                               href={{ unternehmenNews.articles[0].url }}>
                                                 <div class="rotate-img rounded">
                                                     <img src={{ unternehmenNews.articles[0].urlToImage }} alt="thumb"
                                                          class="img-fluid   "/>
@@ -98,20 +103,21 @@ layout: base.njk
                                                         <span class="badge badge-danger font-weight-bold">Flash News</span>
                                                     </div>
                                                 </div>
-
-                                                <div class="pr-3" style="min-width: 50%">
-                                                    <h5 class="text-center">{{ unternehmenNews.articles[0].title }}</h5>
-                                                </div>
+                                            </a>
+                                            <div class="pr-3" style="min-width: 50%">
+                                                <h5 class="text-center">{{ unternehmenNews.articles[0].title }}</h5>
                                             </div>
-                                        </a>
+                                        </div>
+
 
                                     </div>
                                 </div>
                                 <div class="col-sm-6 grid-margin ">
                                     <div class="position-relative ">
-                                        <a style="text-decoration: none ; color: black"
-                                           href={{ unternehmenNews.articles[1].url }}>
-                                            <div class="d-flex flex-column align-items-center justify-content-between">
+
+                                        <div class="d-flex flex-column align-items-center justify-content-between">
+                                            <a style="text-decoration: none ; color: black"
+                                               href={{ unternehmenNews.articles[1].url }}>
                                                 <div class="rotate-img rounded">
                                                     <img src={{ unternehmenNews.articles[1].urlToImage }} alt="thumb"
                                                          class="img-fluid   "/>
@@ -121,12 +127,12 @@ layout: base.njk
                                                         <span class="badge badge-danger font-weight-bold">Flash News</span>
                                                     </div>
                                                 </div>
-
-                                                <div class="pr-3" style="min-width: 50%">
-                                                    <h5 class="text-center">{{ unternehmenNews.articles[1].title }}</h5>
-                                                </div>
+                                            </a>
+                                            <div class="pr-3" style="min-width: 50%">
+                                                <h5 class="text-center">{{ unternehmenNews.articles[1].title }}</h5>
                                             </div>
-                                        </a>
+                                        </div>
+
 
                                     </div>
                                 </div>
@@ -134,9 +140,10 @@ layout: base.njk
                             <div class="row">
                                 <div class="col-sm-6 grid-margin ">
                                     <div class="position-relative ">
-                                        <a style="text-decoration: none ; color: black"
-                                           href={{ unternehmenNews.articles[2].url }}>
-                                            <div class="d-flex flex-column align-items-center justify-content-between">
+
+                                        <div class="d-flex flex-column align-items-center justify-content-between">
+                                            <a style="text-decoration: none ; color: black"
+                                               href={{ unternehmenNews.articles[2].url }}>
                                                 <div class="rotate-img rounded">
                                                     <img src={{ unternehmenNews.articles[2].urlToImage }} alt="thumb"
                                                          class="img-fluid   "/>
@@ -146,20 +153,21 @@ layout: base.njk
                                                         <span class="badge badge-danger font-weight-bold">Flash News</span>
                                                     </div>
                                                 </div>
-
-                                                <div class="pr-3" style="min-width: 50%">
-                                                    <h5 class="text-center">{{ unternehmenNews.articles[2].title }}</h5>
-                                                </div>
+                                            </a>
+                                            <div class="pr-3" style="min-width: 50%">
+                                                <h5 class="text-center">{{ unternehmenNews.articles[2].title }}</h5>
                                             </div>
-                                        </a>
+                                        </div>
+
 
                                     </div>
                                 </div>
                                 <div class="col-sm-6 grid-margin ">
                                     <div class="position-relative ">
-                                        <a style="text-decoration: none ; color: black"
-                                           href={{ unternehmenNews.articles[3].url }}>
-                                            <div class="d-flex flex-column align-items-center justify-content-between">
+
+                                        <div class="d-flex flex-column align-items-center justify-content-between">
+                                            <a style="text-decoration: none ; color: black"
+                                               href={{ unternehmenNews.articles[3].url }}>
                                                 <div class="rotate-img rounded">
                                                     <img src={{ unternehmenNews.articles[3].urlToImage }} alt="thumb"
                                                          class="img-fluid   "/>
@@ -169,12 +177,12 @@ layout: base.njk
                                                         <span class="badge badge-danger font-weight-bold">Flash News</span>
                                                     </div>
                                                 </div>
-
-                                                <div class="pr-3" style="min-width: 50%">
-                                                    <h5 class="text-center">{{ unternehmenNews.articles[3].title }}</h5>
-                                                </div>
+                                            </a>
+                                            <div class="pr-3" style="min-width: 50%">
+                                                <h5 class="text-center">{{ unternehmenNews.articles[3].title }}</h5>
                                             </div>
-                                        </a>
+                                        </div>
+
 
                                     </div>
                                 </div>
@@ -182,9 +190,10 @@ layout: base.njk
                             <div class="row">
                                 <div class="col-sm-6 grid-margin ">
                                     <div class="position-relative ">
-                                        <a style="text-decoration: none ; color: black"
-                                           href={{ unternehmenNews.articles[4].url }}>
-                                            <div class="d-flex flex-column align-items-center justify-content-between">
+
+                                        <div class="d-flex flex-column align-items-center justify-content-between">
+                                            <a style="text-decoration: none ; color: black"
+                                               href={{ unternehmenNews.articles[4].url }}>
                                                 <div class="rotate-img rounded">
                                                     <img src={{ unternehmenNews.articles[4].urlToImage }} alt="thumb"
                                                          class="img-fluid "/>
@@ -194,20 +203,21 @@ layout: base.njk
                                                         <span class="badge badge-danger font-weight-bold">Flash News</span>
                                                     </div>
                                                 </div>
-
-                                                <div class="pr-3" style="min-width: 50%">
-                                                    <h5 class="text-center">{{ unternehmenNews.articles[4].title }}</h5>
-                                                </div>
+                                            </a>
+                                            <div class="pr-3" style="min-width: 50%">
+                                                <h5 class="text-center">{{ unternehmenNews.articles[4].title }}</h5>
                                             </div>
-                                        </a>
+                                        </div>
+
 
                                     </div>
                                 </div>
                                 <div class="col-sm-6 grid-margin ">
                                     <div class="position-relative ">
-                                        <a style="text-decoration: none ; color: black"
-                                           href={{ unternehmenNews.articles[5].url }}>
-                                            <div class="d-flex flex-column align-items-center justify-content-between">
+
+                                        <div class="d-flex flex-column align-items-center justify-content-between">
+                                            <a style="text-decoration: none ; color: black"
+                                               href={{ unternehmenNews.articles[5].url }}>
                                                 <div class="rotate-img rounded">
                                                     <img src={{ unternehmenNews.articles[5].urlToImage }} alt="thumb"
                                                          class="img-fluid   "/>
@@ -217,12 +227,12 @@ layout: base.njk
                                                         <span class="badge badge-danger font-weight-bold">Flash News</span>
                                                     </div>
                                                 </div>
-
-                                                <div class="pr-3" style="min-width: 50%">
-                                                    <h5 class="text-center">{{ unternehmenNews.articles[5].title }}</h5>
-                                                </div>
+                                            </a>
+                                            <div class="pr-3" style="min-width: 50%">
+                                                <h5 class="text-center">{{ unternehmenNews.articles[5].title }}</h5>
                                             </div>
-                                        </a>
+                                        </div>
+
 
                                     </div>
                                 </div>
@@ -236,78 +246,80 @@ layout: base.njk
                                     <h4 class="display-3">Technologie</h4>
                                 </div>
                             </div>
-                            <a target="_blank" style="text-decoration: none; color: black"
-                               href="{{ technologyNews.articles[0].url }}">
-                                <div class="d-flex justify-content-between align-items-center border-bottom pb-4">
-                                    <div class="div-w-80 mr-3">
+
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-4">
+                                <div class="div-w-80 mr-3">
+                                    <a target="_blank" style="text-decoration: none; color: black"
+                                       href="{{ technologyNews.articles[0].url }}">
                                         <div class="rotate-img  rounded">
 
                                             <img alt="thumb"
                                                  src="{{ technologyNews.articles[0].urltechToImage }}"
                                                  class="img-fluid"/>
                                         </div>
-                                    </div>
-                                    <h5 class="font-weight-600 mb-0">
-                                        {{ technologyNews.articles[0].title }}
-                                    </h5>
+                                    </a>
                                 </div>
-                            </a>
-                            <a target="_blank" style="text-decoration: none; color: black"
-                               href="{{ technologyNews.articles[1].url }}">
-                                <div class="d-flex justify-content-between align-items-center border-bottom pb-4 pt-4">
-                                    <div class="div-w-80 mr-3">
+                                <h5 class="font-weight-600 mb-0">
+                                    {{ technologyNews.articles[0].title }}
+                                </h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-4 pt-4">
+                                <div class="div-w-80 mr-3">
+                                    <a target="_blank" style="text-decoration: none; color: black"
+                                       href="{{ technologyNews.articles[1].url }}">
                                         <div class="rotate-img  rounded">
                                             <img src="{{ technologyNews.articles[1].urlToImage }}" alt="thumb"
                                                  class="img-fluid"/>
                                         </div>
-                                    </div>
-                                    <h5 class="font-weight-600 mb-0">
-                                        {{ technologyNews.articles[1].title }}
-                                    </h5>
+                                    </a>
                                 </div>
-                            </a>
-                            <a target="_blank" style="text-decoration: none; color: black"
-                               href="{{ technologyNews.articles[2].url }}">
-                                <div class="d-flex justify-content-between align-items-center border-bottom pb-4 pt-4">
-                                    <div class="div-w-80 mr-3">
+                                <h5 class="font-weight-600 mb-0">
+                                    {{ technologyNews.articles[1].title }}
+                                </h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-bottom pb-4 pt-4">
+                                <div class="div-w-80 mr-3">
+                                    <a target="_blank" style="text-decoration: none; color: black"
+                                       href="{{ technologyNews.articles[2].url }}">
                                         <div class="rotate-img  rounded">
                                             <img src="{{ technologyNews.articles[2].urlToImage }}" alt="thumb"
                                                  class="img-fluid"/>
                                         </div>
-                                    </div>
-                                    <h5 class="font-weight-600 mb-0">
-                                        {{ technologyNews.articles[2].title }}
-                                    </h5>
+                                    </a>
                                 </div>
-                            </a>
-                            <a target="_blank" style="text-decoration: none; color: black"
-                               href="{{ technologyNews.articles[3].url }}">
-                                <div class="d-flex justify-content-between align-items-center border-bottom pt-4 pb-4">
-                                    <div class="div-w-80 mr-3">
+                                <h5 class="font-weight-600 mb-0">
+                                    {{ technologyNews.articles[2].title }}
+                                </h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center border-bottom pt-4 pb-4">
+                                <div class="div-w-80 mr-3">
+                                    <a target="_blank" style="text-decoration: none; color: black"
+                                       href="{{ technologyNews.articles[3].url }}">
                                         <div class="rotate-img  rounded">
                                             <img src={{ technologyNews.articles[3].urlToImage }} alt="thumb"
                                                  class="img-fluid"/>
                                         </div>
-                                    </div>
-                                    <h5 class="font-weight-600 mb-0">
-                                        {{ technologyNews.articles[3].title }}
-                                    </h5>
+                                    </a>
                                 </div>
-                            </a>
-                            <a target="_blank" style="text-decoration: none; color: black"
-                               href="{{ technologyNews.articles[4].url }}">
-                                <div class="d-flex justify-content-between align-items-center pt-4">
-                                    <div class="div-w-80 mr-3">
+                                <h5 class="font-weight-600 mb-0">
+                                    {{ technologyNews.articles[3].title }}
+                                </h5>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center pt-4">
+                                <div class="div-w-80 mr-3">
+                                    <a target="_blank" style="text-decoration: none; color: black"
+                                       href="{{ technologyNews.articles[4].url }}">
                                         <div class="rotate-img  rounded">
                                             <img src={{ technologyNews.articles[4].urlToImage }} alt="thumb"
                                                  class="img-fluid"/>
                                         </div>
-                                    </div>
-                                    <h5 class="font-weight-600 mb-0">
-                                        {{ technologyNews.articles[4].title }}
-                                    </h5>
+                                    </a>
                                 </div>
-                            </a>
+                                <h5 class="font-weight-600 mb-0">
+                                    {{ technologyNews.articles[4].title }}
+                                </h5>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -316,7 +328,7 @@ layout: base.njk
     </div>
     <div class="row" data-aos="fade-up">
         <div class="col-sm-12">
-            <div class="card mainContainer" >
+            <div class="card mainContainer">
                 <div class="card-body">
                     <div class="row">
                         <div class="col-xl-6">
@@ -340,11 +352,11 @@ layout: base.njk
                                         {{ healthNews.articles[0].description }}
                                     </p>
                                     <a target="_blank" href="{{ healthNews.articles[0].url }}"
-                                       class="font-weight-600 fs-16 text-dark"
-                                       style="text-decoration: none;">Read more</a><br> <br>
+                                       class="font-weight-600 fs-16"
+                                       style="text-decoration: none;">Mehr Lesen</a><br> <br>
                                 </div>
                                 <div class="col-xl-6 col-lg-4 col-sm-6">
-                                    <a target="_blank" style="text-decoration: none; color: black  "
+                                    <a target="_blank" style="text-decoration: none; color: black" class="mainContainer"
                                        href="  {{ healthNews.articles[1].url }}">
                                         <div class="border-bottom pb-3 mb-3">
                                             <h3 class="font-weight-600 mb-0">
@@ -355,8 +367,8 @@ layout: base.njk
                                             </p>
                                         </div>
                                     </a>
-                                    <a target="_blank" style="text-decoration: none; color: black  "
-                                       href="  {{ healthNews.articles[2].url }}">
+                                    <a target="_blank" style="text-decoration: none; color: black;"
+                                       href="  {{ healthNews.articles[2].url }}" class="mainContainer">
                                         <div class="pb-3 mb-3">
                                             <h3 class="font-weight-600 mb-0">
                                                 {{ healthNews.articles[2].title }}
@@ -372,30 +384,34 @@ layout: base.njk
                         <div class="col-xl-6">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <a target="_blank" style="text-decoration: none; color: black;"
-                                       href="{{ healthNews.articles[3].url }}">
+
                                         <div class="border-bottom pb-3">
+                                            <a target="_blank" style="text-decoration: none; color: black;"
+                                               href="{{ healthNews.articles[3].url }}">
                                             <div class="rotate-img rounded">
                                                 <img src="{{ healthNews.articles[3].urlToImage }}" alt="thumb"
                                                      class="img-fluid"/>
                                             </div>
+                                            </a>
                                             <p class="fs-16 font-weight-600 mb-0 mt-3">
                                                 {{ healthNews.articles[3].title }}
                                             </p>
                                         </div>
-                                    </a>
-                                    <a target="_blank" style="text-decoration: none; color: black;"
-                                       href="{{ healthNews.articles[4].url }}">
+
+
                                         <div class="pt-3 pb-3">
+                                            <a target="_blank" style="text-decoration: none; color: black;"
+                                               href="{{ healthNews.articles[4].url }}">
                                             <div class="rotate-img rounded">
                                                 <img src="{{ healthNews.articles[4].urlToImage }}" alt="thumb"
                                                      class="img-fluid"/>
                                             </div>
+                                            </a>
                                             <p class="fs-16 font-weight-600 mb-0 mt-3">
                                                 {{ healthNews.articles[4].title }}
                                             </p>
                                         </div>
-                                    </a>
+
                                 </div>
                                 <div class="col-sm-6">
 
