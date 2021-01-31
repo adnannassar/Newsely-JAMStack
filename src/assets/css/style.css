@@ -485,6 +485,9 @@ mark,
   background-color: #fcf8e3;
 }
 
+
+
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
@@ -626,6 +629,9 @@ pre code {
   .container {
     max-width: 1140px;
   }
+  .mdi-theme-light-dark{
+    visibility: visible;
+  }
 }
 
 .container-fluid,
@@ -676,6 +682,10 @@ pre code {
   .container-xl {
     max-width: 1140px;
   }
+  .mdi-theme-light-dark{
+    visibility: visible;
+  }
+
 }
 
 .row {
@@ -1621,6 +1631,7 @@ pre code {
     max-width: 100%;
   }
 
+
   .row-cols-xl-1>* {
     flex: 0 0 100%;
     max-width: 100%;
@@ -2155,12 +2166,19 @@ pre code {
   }
 }
 
+
+#change_theme_header{
+  visibility: hidden;
+}
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+  #change_theme_header{
+    visibility: visible;
   }
 
   .table-responsive-xl>.table-bordered {
@@ -3501,6 +3519,7 @@ input[type="button"].btn-block {
     right: auto;
     left: 0;
   }
+
 
   .dropdown-menu-xl-right {
     right: 0;
@@ -5919,6 +5938,7 @@ a.badge-dark.focus {
     flex-direction: row;
   }
 
+
   .list-group-horizontal-xl .list-group-item:first-child {
     border-bottom-left-radius: 0.25rem;
     border-top-right-radius: 0;
@@ -6381,6 +6401,7 @@ a.close.disabled {
   .modal-xl {
     max-width: 1140px;
   }
+
 }
 
 .tooltip {
@@ -7326,6 +7347,7 @@ button.bg-dark:focus {
     display: none !important;
   }
 
+
   .d-xl-inline {
     display: inline !important;
   }
@@ -8011,6 +8033,7 @@ button.bg-dark:focus {
     flex-direction: row !important;
   }
 
+
   .flex-xl-column {
     flex-direction: column !important;
   }
@@ -8202,6 +8225,7 @@ button.bg-dark:focus {
   .float-xl-left {
     float: left !important;
   }
+
 
   .float-xl-right {
     float: right !important;
@@ -10626,6 +10650,7 @@ button.bg-dark:focus {
   .text-xl-left {
     text-align: left !important;
   }
+
 
   .text-xl-right {
     text-align: right !important;
