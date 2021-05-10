@@ -2166,6 +2166,9 @@ pre code {
   }
 }
 
+.myMargin{
+  margin-bottom: 5rem;
+}
 
 #change_theme_header{
   visibility: hidden;
@@ -12205,6 +12208,11 @@ footer .footer-bottom {
 .light-card{
   background-image: linear-gradient(to right, white, white);
   color: #212020;
+}
+
+#theme{
+  line-height: 0;
+  font-size: 1.5rem;
 }
 
 
