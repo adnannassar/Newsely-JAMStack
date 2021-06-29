@@ -12027,6 +12027,8 @@ header .navbar-bottom .navbar-toggler {
 #header{
   opacity: 0.85;
 }
+
+
 @media (max-width: 999px) {
   .aboutus-wrapper {
     padding: 0;

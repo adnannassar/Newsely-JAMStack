@@ -1,33 +1,12 @@
 $(function () {
-    // aos animation initialisation
     AOS.init({
         duration: 1000,
         once: true
     });
 
-    // scroll header script here
-    window.onscroll = function () {
-        // scrollHeader();
-    };
-    // Get the header
-    var header = $(".navbar-bottom");
-    var body = $("body");
-
-    function scrollHeader() {
-        // adding sticky class
-        if (window.pageYOffset > 300) {
-            $(header).addClass("sticky");
-        } else {
-            // removing sticky class
-            $(header).removeClass("sticky");
-        }
-    }
-
-    // navbar toggler script
     $(".navbar-toggler").on("click", function () {
         $(".collapse").toggleClass("show");
         $("body").toggleClass("layer-open");
-        // $(header).toggleClass("sticky-not");
         $(".navbar-close").show();
     });
     $(".navbar-close").on("click", function () {
@@ -40,15 +19,6 @@ $(function () {
             $("body").removeClass("layer-open");
         });
     });
-
-    // $(".navbar-bottom  .navbar-nav a").on("click", function() {
-    //   $(".navbar-bottom  .navbar-nav")
-    //     .find("li.active")
-    //     .removeClass("active");
-    //   $(this)
-    //     .parent("li")
-    //     .addClass("active");
-    // });
 
     $("html").easeScroll({
         frameRate: 60,
@@ -66,7 +36,6 @@ $(function () {
     });
 
     $(function () {
-
         blankImagesArray = [
             "assets/images/mine/Newsely-images/administration.jpg",
             "assets/images/mine/Newsely-images/archive-gliwice.jpg",
@@ -90,9 +59,6 @@ $(function () {
         }
 
     });
-    $('.simple-marquee-container').SimpleMarquee();
-    $(".marquee-1").trigger('mouseenter');
-    $(".marquee-1").trigger('mouseleave');
 });
 
 

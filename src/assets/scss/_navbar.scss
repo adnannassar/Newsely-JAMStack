@@ -136,11 +136,6 @@ header {
             padding: 0 12px;
           }
         }
-        // &.active {
-        //   > .nav-link {
-        //     color: theme-color(dark);
-        //   }
-        // }
       }
     }
     .navbar-toggler {
@@ -193,9 +188,6 @@ header {
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   padding: 24px;
-  @media (max-width: 999px) {
-    // position: static;
-  }
 }
 .navbar-close {
   display: none;
